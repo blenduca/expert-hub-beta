@@ -40,16 +40,16 @@ export function Navbar() {
           : 'rgba(5, 5, 5, 0.55)',
         backdropFilter: 'blur(24px)',
         WebkitBackdropFilter: 'blur(24px)',
-        borderBottom: '1px solid rgba(220, 38, 38, 0.18)',
+        borderBottom: '1px solid rgba(194, 34, 53, 0.18)',
       }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
-          <div className="flex items-center gap-3 shrink-0">
+          <div className="flex items-center gap-3 shrink-0 pl-2 lg:pl-6">
             <div className="w-[140px] shrink-0">
-               <ImageWithFallback 
-                  src={logoNavbar} 
+               <img 
+                  src="/images/blenduca-logo.svg" 
                   alt="Blenduca Logo" 
                   className="w-full h-auto object-contain"
                />
@@ -77,11 +77,11 @@ export function Navbar() {
               onClick={() => scrollTo('#login')}
               className="hidden sm:inline-flex items-center px-4 py-2 rounded-lg text-white whitespace-nowrap transition-all duration-200 hover:scale-105"
               style={{
-                background: 'linear-gradient(135deg, #dc2626, #ef4444)',
+                background: 'linear-gradient(135deg, #C22235, #C22235)',
                 fontSize: '0.8rem',
                 fontWeight: 600,
                 letterSpacing: '0.04em',
-                boxShadow: '0 0 16px rgba(220,38,38,0.4)',
+                boxShadow: '0 0 16px rgba(194,34,53,0.4)',
               }}
             >
               Login B'Academy
@@ -104,7 +104,7 @@ export function Navbar() {
       >
         <div
           className="px-4 pb-4 pt-2 flex flex-col gap-1"
-          style={{ background: 'rgba(5,5,5,0.95)', borderTop: '1px solid rgba(220,38,38,0.15)' }}
+          style={{ background: 'rgba(5,5,5,0.95)', borderTop: '1px solid rgba(194,34,53,0.15)' }}
         >
           {navLinks.map((link) => (
             <button
@@ -120,10 +120,10 @@ export function Navbar() {
             onClick={() => scrollTo('#login')}
             className="mt-2 px-4 py-3 rounded-lg text-white text-center whitespace-nowrap"
             style={{
-              background: 'linear-gradient(135deg, #dc2626, #ef4444)',
+              background: 'linear-gradient(135deg, #C22235, #C22235)',
               fontSize: '0.875rem',
               fontWeight: 600,
-              boxShadow: '0 0 16px rgba(220,38,38,0.4)',
+              boxShadow: '0 0 16px rgba(194,34,53,0.4)',
             }}
           >
             Login B'Academy

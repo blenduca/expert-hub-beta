@@ -2,16 +2,30 @@
 
 @keyframes shimmerPulse {
   0%, 100% {
-    box-shadow: 0 0 15px 3px rgba(220, 38, 38, 0.7), 0 0 40px 10px rgba(220, 38, 38, 0.3);
+    box-shadow: 0 0 15px 3px rgba(194, 34, 53, 0.7), 0 0 40px 10px rgba(194, 34, 53, 0.3);
   }
   50% {
-    box-shadow: 0 0 30px 10px rgba(220, 38, 38, 1), 0 0 70px 25px rgba(220, 38, 38, 0.5);
+    box-shadow: 0 0 30px 10px rgba(194, 34, 53, 1), 0 0 70px 25px rgba(194, 34, 53, 0.5);
   }
 }
 
 @keyframes shimmerSlide {
   0% { background-position: -200% center; }
   100% { background-position: 200% center; }
+}
+
+@keyframes textGlowPulse {
+  0%, 100% {
+    text-shadow: 0 0 15px rgba(194, 34, 53, 0.6), 0 0 30px rgba(194, 34, 53, 0.3);
+  }
+  50% {
+    text-shadow: 0 0 30px rgba(194, 34, 53, 1), 0 0 60px rgba(194, 34, 53, 0.6);
+  }
+}
+
+.text-glow-animated {
+  color: #C22235;
+  animation: textGlowPulse 2.5s ease-in-out infinite;
 }
 
 @keyframes floatY {
@@ -50,8 +64,8 @@
 }
 
 @keyframes borderGlow {
-  0%, 100% { border-color: rgba(220, 38, 38, 0.4); }
-  50% { border-color: rgba(220, 38, 38, 0.9); }
+  0%, 100% { border-color: rgba(194, 34, 53, 0.4); }
+  50% { border-color: rgba(194, 34, 53, 0.9); }
 }
 
 @keyframes numberCount {
@@ -60,13 +74,13 @@
 }
 
 @keyframes pulseRed {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.4); }
-  50% { box-shadow: 0 0 0 8px rgba(220, 38, 38, 0); }
+  0%, 100% { box-shadow: 0 0 0 0 rgba(194, 34, 53, 0.4); }
+  50% { box-shadow: 0 0 0 8px rgba(194, 34, 53, 0); }
 }
 
 .cta-shimmer {
   animation: shimmerPulse 2.5s ease-in-out infinite;
-  background: linear-gradient(135deg, #dc2626 0%, #ef4444 50%, #dc2626 100%);
+  background: linear-gradient(135deg, #C22235 0%, #C22235 50%, #C22235 100%);
   background-size: 200% auto;
 }
 
@@ -75,7 +89,7 @@
 }
 
 .cta-shimmer-text {
-  background: linear-gradient(90deg, #fff 0%, #fca5a5 30%, #fff 60%, #fca5a5 90%, #fff 100%);
+  background: linear-gradient(90deg, #fff 0%, #e05969 30%, #fff 60%, #e05969 90%, #fff 100%);
   background-size: 200% auto;
   -webkit-background-clip: text;
   background-clip: text;
@@ -104,8 +118,8 @@
 
 .hero-grid {
   background-image: 
-    linear-gradient(rgba(220, 38, 38, 0.06) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(220, 38, 38, 0.06) 1px, transparent 1px);
+    linear-gradient(rgba(194, 34, 53, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(194, 34, 53, 0.06) 1px, transparent 1px);
   background-size: 60px 60px;
   animation: heroGrid 8s linear infinite;
 }
@@ -130,7 +144,7 @@
   background: rgba(10, 10, 10, 0.6);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(220, 38, 38, 0.15);
+  border-bottom: 1px solid rgba(194, 34, 53, 0.15);
 }
 
 .glass-card {
@@ -141,11 +155,11 @@
 }
 
 .red-line-left {
-  background: linear-gradient(90deg, #dc2626, transparent);
+  background: linear-gradient(90deg, #C22235, transparent);
 }
 
 .red-line-right {
-  background: linear-gradient(270deg, #dc2626, transparent);
+  background: linear-gradient(270deg, #C22235, transparent);
 }
 
 /* Scan line effect for hero */
@@ -161,6 +175,6 @@ html {
 
 /* Remove button outlines */
 button:focus-visible {
-  outline: 2px solid rgba(220, 38, 38, 0.5);
+  outline: 2px solid rgba(194, 34, 53, 0.5);
   outline-offset: 2px;
 }

@@ -14,8 +14,8 @@ export function Footer() {
           {/* Brand & Info */}
           <div className="flex flex-col items-start max-w-sm">
             <div className="w-[120px] h-auto mb-6">
-              <ImageWithFallback
-                src={logoFooter}
+              <img
+                src="/images/blenduca-logo.svg"
                 alt="Blenduca Logo"
                 className="w-full h-auto object-contain"
               />
@@ -37,7 +37,7 @@ export function Footer() {
                   href={url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 rounded-full flex items-center justify-center bg-white/5 hover:bg-red-600/20 text-gray-400 hover:text-red-500 transition-all duration-300 border border-white/10 hover:border-red-600/30"
+                  className="w-10 h-10 rounded-full flex items-center justify-center bg-white/5 hover:bg-[#C22235]/20 text-gray-400 hover:text-[#C22235] transition-all duration-300 border border-white/10 hover:border-[#C22235]/30"
                 >
                   <Icon size={18} />
                 </a>
@@ -47,15 +47,15 @@ export function Footer() {
 
           {/* Contact */}
           <div className="flex flex-col gap-4 text-sm text-gray-400">
-            <h4 className="text-white font-bold uppercase tracking-widest text-xs mb-2">Contato</h4>
-            <a href="mailto:relacionamento@blenduca.com.br" className="hover:text-red-500 transition-colors">
+            <h4 className="text-white font-bold tracking-widest text-xs mb-2">Contato</h4>
+            <a href="mailto:relacionamento@blenduca.com.br" className="hover:text-[#C22235] transition-colors">
               relacionamento@blenduca.com.br
             </a>
             <a
               href="https://wa.me/5549991548024"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-red-500 transition-colors"
+              className="hover:text-[#C22235] transition-colors"
             >
               +55 49 99154-8024
             </a>
@@ -64,7 +64,7 @@ export function Footer() {
 
           {/* Links */}
           <div className="flex flex-col gap-4">
-            <h4 className="text-white font-bold uppercase tracking-widest text-xs mb-2">Menu</h4>
+            <h4 className="text-white font-bold tracking-widest text-xs mb-2">Menu</h4>
             {['Expert Hub', 'Cases', 'Soluções', 'Conteúdos', 'Quem Somos'].map((link) => (
               <a
                 key={link}
@@ -87,7 +87,7 @@ export function Footer() {
             © 2026 Blenduca · Todos os direitos reservados
           </div>
           <div>
-            Negócios de Conhecimento · Tecnologia · Inteligência Artificial
+            Negócios de conhecimento · Tecnologia · Inteligência artificial
           </div>
         </div>
       </div>

@@ -19,7 +19,7 @@ interface Pilar {
 const pilars: Pilar[] = [
   {
     id: 6,
-    label: 'TECNOLOGIA',
+    label: 'Tecnologia',
     letter: 'T',
     sublabel: 'Tech & Inteligência Artificial',
     icon: Cpu,
@@ -34,7 +34,7 @@ const pilars: Pilar[] = [
   },
   {
     id: 1,
-    label: 'ESTRATÉGIA',
+    label: 'Estratégia',
     letter: 'E',
     sublabel: 'Consultoria & Orientação Individual',
     icon: BarChart2,
@@ -50,7 +50,7 @@ const pilars: Pilar[] = [
   },
   {
     id: 5,
-    label: 'RESULTADOS',
+    label: 'Resultados',
     letter: 'R',
     sublabel: 'Métricas, Rotina & Acompanhamento',
     icon: Globe,
@@ -66,7 +66,7 @@ const pilars: Pilar[] = [
   },
   {
     id: 0,
-    label: 'IMPLEMENTAÇÃO',
+    label: 'Implementação',
     letter: '',
     sublabel: 'Diagnóstico & Mapa B’Expert',
     icon: Compass,
@@ -82,7 +82,7 @@ const pilars: Pilar[] = [
   },
   {
     id: 2,
-    label: 'CONEXÕES',
+    label: 'Conexões',
     letter: 'X',
     sublabel: 'Comunidade & Networking Estratégico',
     icon: Users,
@@ -98,7 +98,7 @@ const pilars: Pilar[] = [
   },
   {
     id: 4,
-    label: 'EDUCAÇÃO',
+    label: 'Educação',
     letter: 'E',
     sublabel: 'Conteúdo & Formação Contínua',
     icon: LayoutDashboard,
@@ -113,7 +113,7 @@ const pilars: Pilar[] = [
   },
   {
     id: 3,
-    label: 'PERFORMANCE',
+    label: 'Performance',
     letter: 'P',
     sublabel: 'Mentoria & Acompanhamento de Alto Nível',
     icon: Shield,
@@ -176,7 +176,7 @@ function Hexagon({ pilar, isActive, onClick }: HexagonProps) {
         className="absolute inset-0 transition-all duration-300"
         style={{
           background: isActive 
-            ? 'linear-gradient(135deg, #dc2626, #991b1b)' 
+            ? 'linear-gradient(135deg, #C22235, #741420)' 
             : isCenter 
               ? 'rgba(20,20,20,0.95)' 
               : 'rgba(20,20,20,0.95)',
@@ -212,7 +212,7 @@ function Hexagon({ pilar, isActive, onClick }: HexagonProps) {
                     className="text-center font-black leading-none transition-colors duration-300 mb-1"
                     style={{
                         fontSize: '2.5rem',
-                        color: isActive ? 'rgba(255,255,255,0.9)' : 'rgba(220,38,38,0.5)',
+                        color: isActive ? 'rgba(255,255,255,0.9)' : 'rgba(194,34,53,0.5)',
                         textShadow: isActive ? '0 0 20px rgba(255,255,255,0.3)' : 'none'
                     }}
                 >
@@ -221,7 +221,7 @@ function Hexagon({ pilar, isActive, onClick }: HexagonProps) {
                 
                 {/* Label */}
                 <div
-                className="text-center leading-tight transition-colors duration-300 uppercase"
+                className="text-center leading-tight transition-colors duration-300"
                 style={{
                     fontSize: '0.55rem',
                     fontWeight: 700,
@@ -248,28 +248,28 @@ export function HexagonPillars() {
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
-          background: 'radial-gradient(ellipse at 50% 50%, rgba(220,38,38,0.05) 0%, transparent 60%)',
+          background: 'radial-gradient(ellipse at 50% 50%, rgba(194,34,53,0.05) 0%, transparent 60%)',
         }}
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         <AnimatedSection className="text-center mb-12" direction="up">
           <div
-            className="inline-block mb-3 px-3 py-1 rounded-full text-red-500 uppercase tracking-widest"
+            className="inline-block mb-3 px-3 py-1 rounded-full text-[#C22235] tracking-widest"
             style={{
               fontSize: '0.65rem',
               fontWeight: 700,
-              background: 'rgba(220,38,38,0.1)',
-              border: '1px solid rgba(220,38,38,0.25)',
+              background: 'rgba(194,34,53,0.1)',
+              border: '1px solid rgba(194,34,53,0.25)',
             }}
           >
-            O Ecossistema
+            O ecossistema
           </div>
           <h2 className="text-white mb-4" style={{ fontSize: 'clamp(1.6rem, 3.5vw, 2.8rem)', fontWeight: 800 }}>
-            O Modelo{' '}
-            <span style={{ color: '#ef4444' }}>EXPERT</span>
+            O modelo{' '}
+            <span style={{ color: '#C22235' }}>expert</span>
           </h2>
-          <p className="text-gray-500 max-w-xl mx-auto" style={{ fontSize: '0.95rem', lineHeight: 1.75 }}>
+          <p className="text-gray-500 max-w-xl mx-auto text-balance" style={{ fontSize: '0.95rem', lineHeight: 1.75 }}>
             7 pilares fundamentais em um ecossistema integrado. Clique em cada pilar para explorar.
           </p>
         </AnimatedSection>
@@ -308,9 +308,9 @@ export function HexagonPillars() {
                       onClick={() => setActiveId(p.id)}
                       className="flex items-center gap-2 px-3 py-2 rounded-xl transition-all duration-200 whitespace-nowrap"
                       style={{
-                        background: isAct ? 'linear-gradient(135deg, #dc2626, #7f1d1d)' : 'rgba(15,15,15,0.95)',
-                        border: isAct ? '1px solid rgba(220,38,38,0.7)' : '1px solid rgba(255,255,255,0.08)',
-                        boxShadow: isAct ? '0 0 14px rgba(220,38,38,0.4)' : 'none',
+                        background: isAct ? 'linear-gradient(135deg, #C22235, #520e17)' : 'rgba(15,15,15,0.95)',
+                        border: isAct ? '1px solid rgba(194,34,53,0.7)' : '1px solid rgba(255,255,255,0.08)',
+                        boxShadow: isAct ? '0 0 14px rgba(194,34,53,0.4)' : 'none',
                       }}
                     >
                       <span
@@ -342,11 +342,11 @@ export function HexagonPillars() {
                 }}
               >
                 {/* Glow effect in panel */}
-                <div className="absolute top-0 right-0 w-64 h-64 bg-red-600/10 blur-[80px] pointer-events-none" />
+                <div className="absolute top-0 right-0 w-64 h-64 bg-[#C22235]/10 blur-[80px] pointer-events-none" />
 
                 <div className="relative z-10">
                   <div className="flex items-center gap-3 mb-6">
-                    <span className="px-3 py-1 rounded-full bg-red-500/10 border border-red-500/20 text-red-500 text-xs font-bold tracking-widest">
+                    <span className="px-3 py-1 rounded-full bg-[#C22235]/10 border border-[#C22235]/20 text-[#C22235] text-xs font-bold tracking-widest">
                        {activePilar.isCenter ? 'ONBOARDING' : `PILAR ${String(activePilar.id).padStart(2, '0')}`}
                     </span>
                   </div>
@@ -354,11 +354,11 @@ export function HexagonPillars() {
                   <h3 className="text-3xl font-bold text-white mb-2">
                     {activePilar.label}
                   </h3>
-                  <p className="text-red-400 font-medium mb-6 text-sm tracking-wide">
+                  <p className="text-[#e05969] font-medium mb-6 text-sm tracking-wide">
                     {activePilar.sublabel}
                   </p>
 
-                  <div className="mb-6 p-4 rounded-xl bg-white/5 border-l-2 border-red-500">
+                  <div className="mb-6 p-4 rounded-xl bg-white/5 border-l-2 border-[#C22235]">
                     <p className="text-gray-300 italic text-sm">
                         "{activePilar.question}"
                     </p>
@@ -369,7 +369,7 @@ export function HexagonPillars() {
                   </p>
 
                   <div>
-                    <div className="text-xs font-bold text-gray-600 uppercase tracking-widest mb-4">
+                    <div className="text-xs font-bold text-gray-600 tracking-widest mb-4">
                       O que inclui
                     </div>
                     <div className="space-y-3">
@@ -378,7 +378,7 @@ export function HexagonPillars() {
                           key={phase}
                           className="flex items-center gap-3 p-3 rounded-lg bg-white/5 border border-white/5 transition-colors hover:bg-white/10"
                         >
-                          <div className="w-6 h-6 rounded-full bg-red-500/20 text-red-500 flex items-center justify-center text-xs font-bold border border-red-500/30 shrink-0">
+                          <div className="w-6 h-6 rounded-full bg-[#C22235]/20 text-[#C22235] flex items-center justify-center text-xs font-bold border border-[#C22235]/30 shrink-0">
                             {i + 1}
                           </div>
                           <span className="text-gray-300 text-sm font-medium">

@@ -16,8 +16,8 @@ export function ExpertModel() {
     <section className="relative bg-[#050505] py-24 overflow-hidden">
       {/* BG */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-red-600/20 to-transparent" />
-        <div className="absolute bottom-1/2 left-0 w-80 h-80 bg-red-900 opacity-5 blur-[100px] rounded-full" />
+        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#C22235]/20 to-transparent" />
+        <div className="absolute bottom-1/2 left-0 w-80 h-80 bg-[#520e17] opacity-5 blur-[100px] rounded-full" />
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -30,9 +30,9 @@ export function ExpertModel() {
             transition={{ duration: 0.8 }}
           >
             <div className="inline-flex items-center gap-2 mb-4">
-              <div className="h-px w-8 bg-red-600" />
-              <span className="text-red-500" style={{ fontSize: '12px', fontWeight: 700, letterSpacing: '0.15em' }}>
-                MODELO EXPERT
+              <div className="h-px w-8 bg-[#C22235]" />
+              <span className="text-[#C22235]" style={{ fontSize: '12px', fontWeight: 700, letterSpacing: '0.15em' }}>
+                Modelo expert
               </span>
             </div>
 
@@ -40,11 +40,11 @@ export function ExpertModel() {
               className="text-white mb-4"
               style={{ fontSize: 'clamp(1.8rem, 4vw, 3rem)', fontWeight: 800, lineHeight: 1.1 }}
             >
-              Tudo que Você Precisa.{" "}
-              <span style={{ color: "#ef4444" }}>Um Único Ecossistema.</span>
+              Tudo que você precisa.{" "}
+              <span style={{ color: "#C22235" }}>Um único ecossistema.</span>
             </h2>
 
-            <p className="text-gray-400 mb-8" style={{ fontSize: '15px', lineHeight: 1.8 }}>
+            <p className="text-gray-400 mb-8 text-balance" style={{ fontSize: '15px', lineHeight: 1.8 }}>
               Nossa plataforma centraliza o ecossistema de gestão do seu negócio de conhecimento,
               unindo metodologia ágil, dados em tempo real e os 7 pilares fundamentais para
               escalabilidade.
@@ -62,7 +62,7 @@ export function ExpertModel() {
                     transition={{ duration: 0.5, delay: i * 0.08 }}
                     className="flex items-center gap-3 glass-card rounded-xl px-4 py-3 border border-white/5"
                   >
-                    <Icon size={16} className="text-red-500 shrink-0" />
+                    <Icon size={16} className="text-[#C22235] shrink-0" />
                     <span className="text-gray-400" style={{ fontSize: '13px', fontWeight: 600 }}>
                       {h.text}
                     </span>
@@ -92,7 +92,7 @@ export function ExpertModel() {
           >
             {/* Glow behind laptop */}
             <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-              <div className="w-72 h-72 bg-red-600/15 rounded-full blur-[80px]" />
+              <div className="w-72 h-72 bg-[#C22235]/15 rounded-full blur-[80px]" />
             </div>
 
             {/* Laptop image wrapper */}
@@ -101,19 +101,19 @@ export function ExpertModel() {
                 src="https://images.unsplash.com/photo-1632893037506-aac33bf18107?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsYXB0b3AlMjBmbG9hdGluZyUyMGRhcmslMjBtb2Rlcm4lMjBtb2NrdXB8ZW58MXx8fHwxNzcxNTI5NDMxfDA&ixlib=rb-4.1.0&q=80&w=1080"
                 alt="Expert Hub Platform Dashboard"
                 className="w-full h-auto rounded-2xl"
-                style={{ filter: "drop-shadow(0 0 40px rgba(220,38,38,0.2))" }}
+                style={{ filter: "drop-shadow(0 0 40px rgba(194,34,53,0.2))" }}
               />
 
               {/* Floating stat cards */}
               <motion.div
                 animate={{ y: [0, -8, 0] }}
                 transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute -top-4 -left-4 glass-card rounded-xl px-4 py-3 border border-red-600/30 shadow-xl"
+                className="absolute -top-4 -left-4 glass-card rounded-xl px-4 py-3 border border-[#C22235]/30 shadow-xl"
               >
                 <div className="flex items-center gap-2">
-                  <TrendingUp size={14} className="text-red-500" />
+                  <TrendingUp size={14} className="text-[#C22235]" />
                   <div>
-                    <div className="text-white" style={{ fontSize: '16px', fontWeight: 800, color: '#ef4444' }}>+247%</div>
+                    <div className="text-white" style={{ fontSize: '16px', fontWeight: 800, color: '#C22235' }}>+247%</div>
                     <div className="text-gray-500" style={{ fontSize: '10px', fontWeight: 600 }}>Crescimento médio</div>
                   </div>
                 </div>
@@ -122,10 +122,10 @@ export function ExpertModel() {
               <motion.div
                 animate={{ y: [0, 8, 0] }}
                 transition={{ duration: 3.5, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
-                className="absolute -bottom-4 -right-4 glass-card rounded-xl px-4 py-3 border border-red-600/30 shadow-xl"
+                className="absolute -bottom-4 -right-4 glass-card rounded-xl px-4 py-3 border border-[#C22235]/30 shadow-xl"
               >
                 <div className="flex items-center gap-2">
-                  <Zap size={14} className="text-red-500" />
+                  <Zap size={14} className="text-[#C22235]" />
                   <div>
                     <div className="text-white" style={{ fontSize: '16px', fontWeight: 800 }}>7 Pilares</div>
                     <div className="text-gray-500" style={{ fontSize: '10px', fontWeight: 600 }}>Integrados na plataforma</div>

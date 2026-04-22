@@ -146,7 +146,7 @@ export function Hero() {
 
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(220, 38, 38, ${p.opacity})`;
+        ctx.fillStyle = `rgba(194, 34, 53, ${p.opacity})`;
         ctx.fill();
       });
 
@@ -159,7 +159,7 @@ export function Hero() {
           if (distance < 120) {
             const opacity = 1 - distance / 120;
             ctx.beginPath();
-            ctx.strokeStyle = `rgba(220, 38, 38, ${opacity * 0.4})`;
+            ctx.strokeStyle = `rgba(194, 34, 53, ${opacity * 0.4})`;
             ctx.lineWidth = 1;
             ctx.moveTo(particles[a].x, particles[a].y);
             ctx.lineTo(particles[b].x, particles[b].y);
@@ -201,7 +201,7 @@ export function Hero() {
       prefix: '+',
       target: '200',
       suffix: '',
-      label: 'Negócios Impactados',
+      label: 'Negócios impactados',
       sublabel: 'Especialistas transformados',
       icon: TrendingUp
     },
@@ -209,7 +209,7 @@ export function Hero() {
       prefix: '+R$',
       target: '40',
       suffix: 'M',
-      label: 'Em Resultados',
+      label: 'Em resultados',
       sublabel: 'Receita adicional gerada',
       icon: Sparkles
     },
@@ -217,7 +217,7 @@ export function Hero() {
       prefix: '+',
       target: '60000',
       suffix: '',
-      label: 'Vidas Transformadas',
+      label: 'Vidas transformadas',
       sublabel: 'Pessoas impactadas',
       icon: Users
     },
@@ -256,7 +256,7 @@ export function Hero() {
         style={{
           width: '600px',
           height: '600px',
-          background: 'radial-gradient(circle, rgba(220,38,38,0.1) 0%, transparent 70%)',
+          background: 'radial-gradient(circle, rgba(194,34,53,0.1) 0%, transparent 70%)',
           top: '20%',
           left: '20%',
           transform: 'translate(-50%, -50%)',
@@ -268,7 +268,7 @@ export function Hero() {
         style={{
           width: '500px',
           height: '500px',
-          background: 'radial-gradient(circle, rgba(220,38,38,0.08) 0%, transparent 70%)',
+          background: 'radial-gradient(circle, rgba(194,34,53,0.08) 0%, transparent 70%)',
           bottom: '10%',
           right: '10%',
           zIndex: 1
@@ -279,11 +279,11 @@ export function Hero() {
       <div className="relative z-10 text-center px-4 sm:px-6 max-w-6xl mx-auto flex flex-col items-center flex-grow justify-center">
 
         {/* LOGO */}
-        <div className="mb-8 animate-fade-in-down" style={{ width: 'clamp(200px, 40vw, 350px)' }}>
-          <ImageWithFallback
-            src={image_f66342379a63292042f4ef5f17e69b1abc3d5492}
-            alt="Blenduca Logo"
-            className="w-full h-auto drop-shadow-[0_0_15px_rgba(220,38,38,0.5)]"
+        <div className="mb-8 mt-24 animate-fade-in-down" style={{ width: 'clamp(200px, 40vw, 350px)' }}>
+          <img
+            src="/images/expert-hub-logo.png"
+            alt="Expert Hub Logo"
+            className="w-full h-auto drop-shadow-[0_0_15px_rgba(194,34,53,0.5)]"
           />
         </div>
 
@@ -300,49 +300,17 @@ export function Hero() {
           }}
         >
           Onde a{' '}
-          <span
-            className="relative inline-block"
-          >
-            <span
-              className="absolute inset-0 blur-lg opacity-50 bg-red-600 mix-blend-screen"
-              style={{ transform: 'scale(1.2)' }}
-            />
-            <span
-              className="relative"
-              style={{
-                background: 'linear-gradient(135deg, #fff 0%, #ef4444 100%)',
-                WebkitBackgroundClip: 'text',
-                WebkitTextFillColor: 'transparent',
-                backgroundClip: 'text',
-              }}
-            >
-              Inovação
-            </span>
+          <span className="text-glow-animated">
+            inovação
           </span>{' '}
-          <span
-            className="relative inline-block"
-          >
-            <span
-              className="absolute inset-0 blur-lg opacity-50 bg-red-600 mix-blend-screen"
-              style={{ transform: 'scale(1.2)' }}
-            />
-            <span
-              className="relative"
-              style={{
-                background: 'linear-gradient(135deg, #fff 0%, #ef4444 100%)',
-                WebkitBackgroundClip: 'text',
-                WebkitTextFillColor: 'transparent',
-                backgroundClip: 'text',
-              }}
-            >
-              Acelera
-            </span>
+          <span className="text-glow-animated">
+            acelera
           </span>{' '}
-          o Conhecimento
+          o conhecimento
         </h1>
 
         <p
-          className="text-gray-300 mx-auto mb-10 max-w-2xl font-light"
+          className="text-gray-300 mx-auto mb-10 max-w-2xl font-light text-balance"
           style={{
             fontSize: 'clamp(1rem, 2vw, 1.25rem)',
             lineHeight: 1.6,
@@ -355,7 +323,7 @@ export function Hero() {
         </p>
 
         {/* Video Player */}
-        <div className="w-full max-w-3xl mx-auto mb-10 rounded-xl overflow-hidden shadow-[0_0_30px_rgba(220,38,38,0.2)] border border-white/10" style={{ animation: 'fadein 0.8s ease 0.7s both' }}>
+        <div className="w-full max-w-3xl mx-auto mb-10 rounded-xl overflow-hidden shadow-[0_0_30px_rgba(194,34,53,0.2)] border border-white/10" style={{ animation: 'fadein 0.8s ease 0.7s both' }}>
           <VideoPlayer
             src="/Vídeo Blenduca Atualizado.mp4"
             title="Blenduca Video"
@@ -365,9 +333,9 @@ export function Hero() {
         <div style={{ animation: 'fadein 0.8s ease 0.8s both' }}>
           <button
             onClick={() => document.querySelector('#final-cta')?.scrollIntoView({ behavior: 'smooth' })}
-            className="cta-shimmer group relative inline-flex items-center gap-3 px-8 py-4 rounded-xl text-white overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(220,38,38,0.6)]"
+            className="cta-shimmer group relative inline-flex items-center gap-3 px-8 py-4 rounded-xl text-white overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(194,34,53,0.6)]"
             style={{
-              background: 'linear-gradient(135deg, #b91c1c 0%, #dc2626 100%)',
+              background: 'linear-gradient(135deg, #961a29 0%, #C22235 100%)',
               border: '1px solid rgba(255,255,255,0.1)',
             }}
           >
@@ -392,7 +360,7 @@ export function Hero() {
                     fontSize: 'clamp(2.5rem, 4vw, 3.5rem)',
                     fontWeight: 900,
                     lineHeight: 1,
-                    background: 'linear-gradient(135deg, #fff 40%, #ef4444 100%)',
+                    background: 'linear-gradient(135deg, #fff 40%, #C22235 100%)',
                     WebkitBackgroundClip: 'text',
                     WebkitTextFillColor: 'transparent',
                     backgroundClip: 'text',
@@ -405,7 +373,7 @@ export function Hero() {
                     isVisible={statsVisible}
                   />
                 </div>
-                <div className="text-red-500 uppercase tracking-widest font-bold mb-1" style={{ fontSize: '0.7rem' }}>
+                <div className="text-[#C22235] tracking-widest font-bold mb-1" style={{ fontSize: '0.7rem' }}>
                   {s.label}
                 </div>
                 <div className="text-gray-500 text-xs max-w-[150px]">
@@ -420,7 +388,7 @@ export function Hero() {
       {/* Scroll indicator */}
       <button
         onClick={scrollToNext}
-        className="absolute bottom-4 left-1/2 -translate-x-1/2 text-white/30 hover:text-red-500 transition-colors duration-300 z-20"
+        className="absolute bottom-4 left-1/2 -translate-x-1/2 text-white/30 hover:text-[#C22235] transition-colors duration-300 z-20"
         style={{ animation: 'bounce 2s infinite' }}
         aria-label="Scroll down"
       >
@@ -448,8 +416,8 @@ export function Hero() {
         }
         .perspective-grid {
             background-image: 
-                linear-gradient(to right, rgba(220, 38, 38, 0.1) 1px, transparent 1px),
-                linear-gradient(to bottom, rgba(220, 38, 38, 0.1) 1px, transparent 1px);
+                linear-gradient(to right, rgba(194, 34, 53, 0.1) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(194, 34, 53, 0.1) 1px, transparent 1px);
             background-size: 50px 50px;
             transform: perspective(500px) rotateX(60deg);
             transform-origin: center top;

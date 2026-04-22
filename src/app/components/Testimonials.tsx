@@ -51,27 +51,27 @@ export function Testimonials() {
     <section id="cases" className="relative py-24 overflow-hidden" style={{ background: '#000' }}>
       <div
         className="absolute top-0 left-0 right-0 h-px"
-        style={{ background: 'linear-gradient(90deg, transparent, rgba(220,38,38,0.4), transparent)' }}
+        style={{ background: 'linear-gradient(90deg, transparent, rgba(194,34,53,0.4), transparent)' }}
       />
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <AnimatedSection className="text-center mb-14" direction="up">
           <div
-            className="inline-block mb-3 px-3 py-1 rounded-full text-red-500 uppercase tracking-widest"
+            className="inline-block mb-3 px-3 py-1 rounded-full text-[#C22235] tracking-widest"
             style={{
               fontSize: '0.65rem',
               fontWeight: 700,
-              background: 'rgba(220,38,38,0.1)',
-              border: '1px solid rgba(220,38,38,0.25)',
+              background: 'rgba(194,34,53,0.1)',
+              border: '1px solid rgba(194,34,53,0.25)',
             }}
           >
-            Histórias de Sucesso
+            Histórias de sucesso
           </div>
           <h2 className="text-white mb-4" style={{ fontSize: 'clamp(1.6rem, 3.5vw, 2.8rem)', fontWeight: 800 }}>
             Transformações{' '}
-            <span style={{ color: '#ef4444' }}>Reais</span>
+            <span style={{ color: '#C22235' }}>reais</span>
           </h2>
-          <p className="text-gray-500 max-w-xl mx-auto" style={{ fontSize: '0.95rem', lineHeight: 1.75 }}>
+          <p className="text-gray-500 max-w-xl mx-auto text-balance" style={{ fontSize: '0.95rem', lineHeight: 1.75 }}>
             Veja como líderes do setor estão escalando suas operações e faturamento com o ecossistema Expert Hub.
           </p>
         </AnimatedSection>
@@ -104,7 +104,7 @@ export function Testimonials() {
               {/* Right: Quote & Info */}
               <div className="relative p-8 md:p-12 flex flex-col justify-center lg:h-[600px]">
                 <div className="mb-6 flex-1 flex flex-col">
-                  <Quote className="text-red-500 opacity-50 mb-4 transform scale-x-[-1] shrink-0" size={40} />
+                  <Quote className="text-[#C22235] opacity-50 mb-4 transform scale-x-[-1] shrink-0" size={40} />
                   <AnimatePresence mode="wait">
                     <motion.div
                       key={t.id}
@@ -131,7 +131,7 @@ export function Testimonials() {
                       transition={{ duration: 0.4, delay: 0.1 }}
                     >
                       <div className="text-white font-bold text-lg">{t.name}</div>
-                      <div className="text-red-500 text-sm font-medium">{t.role}</div>
+                      <div className="text-[#C22235] text-sm font-medium">{t.role}</div>
                       {t.company && <div className="text-gray-500 text-xs mt-0.5">{t.company}</div>}
                     </motion.div>
                   </AnimatePresence>
@@ -163,7 +163,7 @@ export function Testimonials() {
               <button
                 key={i}
                 onClick={() => setCurrent(i)}
-                className={`w-2 h-2 rounded-full transition-all duration-300 ${current === i ? 'w-8 bg-red-500' : 'bg-gray-700 hover:bg-gray-500'}`}
+                className={`w-2 h-2 rounded-full transition-all duration-300 ${current === i ? 'w-8 bg-[#C22235]' : 'bg-gray-700 hover:bg-gray-500'}`}
               />
             ))}
           </div>

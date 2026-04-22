@@ -56,16 +56,16 @@ const numbers = [
     prefix: '+',
     target: '200',
     suffix: '',
-    label: 'NEGÓCIOS IMPACTADOS',
+    label: 'Negócios impactados',
     sublabel: 'Especialistas transformados em máquinas de resultado',
     icon: TrendingUp,
-    color: '#ef4444',
+    color: '#C22235',
   },
   {
     prefix: '+R$',
     target: '40',
     suffix: 'M',
-    label: 'GERADOS EM RESULTADOS',
+    label: 'Gerados em resultados',
     sublabel: 'Em receita adicional gerada pelos nossos alunos',
     icon: Sparkles,
     color: '#f87171',
@@ -74,10 +74,10 @@ const numbers = [
     prefix: '+',
     target: '60000',
     suffix: '',
-    label: 'VIDAS TRANSFORMADAS',
+    label: 'Vidas transformadas',
     sublabel: 'Pessoas impactadas pelo ecossistema Blenduca',
     icon: Users,
-    color: '#ef4444',
+    color: '#C22235',
   },
 ];
 
@@ -108,11 +108,11 @@ export function BigNumbers() {
       {/* Decorative lines */}
       <div
         className="absolute top-0 left-0 right-0 h-px"
-        style={{ background: 'linear-gradient(90deg, transparent, rgba(220,38,38,0.5), transparent)' }}
+        style={{ background: 'linear-gradient(90deg, transparent, rgba(194,34,53,0.5), transparent)' }}
       />
       <div
         className="absolute bottom-0 left-0 right-0 h-px"
-        style={{ background: 'linear-gradient(90deg, transparent, rgba(220,38,38,0.5), transparent)' }}
+        style={{ background: 'linear-gradient(90deg, transparent, rgba(194,34,53,0.5), transparent)' }}
       />
 
       {/* Red glow center */}
@@ -121,7 +121,7 @@ export function BigNumbers() {
         style={{
           width: '600px',
           height: '300px',
-          background: 'radial-gradient(ellipse, rgba(220,38,38,0.08) 0%, transparent 70%)',
+          background: 'radial-gradient(ellipse, rgba(194,34,53,0.08) 0%, transparent 70%)',
           top: '50%',
           left: '50%',
           transform: 'translate(-50%,-50%)',
@@ -131,19 +131,19 @@ export function BigNumbers() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
         <AnimatedSection className="text-center mb-16" direction="up">
           <div
-            className="inline-block mb-3 px-3 py-1 rounded-full text-red-500 uppercase tracking-widest"
+            className="inline-block mb-3 px-3 py-1 rounded-full text-[#C22235] tracking-widest"
             style={{
               fontSize: '0.65rem',
               fontWeight: 700,
-              background: 'rgba(220,38,38,0.1)',
-              border: '1px solid rgba(220,38,38,0.25)',
+              background: 'rgba(194,34,53,0.1)',
+              border: '1px solid rgba(194,34,53,0.25)',
             }}
           >
-            Resultados Comprovados
+            Resultados comprovados
           </div>
           <h2 className="text-white" style={{ fontSize: 'clamp(1.6rem, 3vw, 2.5rem)', fontWeight: 800 }}>
             Números que{' '}
-            <span style={{ color: '#ef4444' }}>Comprovam</span> o Método
+            <span style={{ color: '#C22235' }}>comprovam</span> o método
           </h2>
         </AnimatedSection>
 
@@ -156,14 +156,14 @@ export function BigNumbers() {
                   className="relative text-center p-8 rounded-2xl group hover:scale-105 transition-transform duration-300"
                   style={{
                     background: 'rgba(15,15,15,0.8)',
-                    border: '1px solid rgba(220,38,38,0.15)',
-                    boxShadow: '0 0 40px rgba(220,38,38,0.04)',
+                    border: '1px solid rgba(194,34,53,0.15)',
+                    boxShadow: '0 0 40px rgba(194,34,53,0.04)',
                   }}
                 >
                   {/* Icon */}
                   <div
                     className="w-12 h-12 rounded-xl flex items-center justify-center mx-auto mb-5"
-                    style={{ background: 'rgba(220,38,38,0.1)', border: '1px solid rgba(220,38,38,0.25)' }}
+                    style={{ background: 'rgba(194,34,53,0.1)', border: '1px solid rgba(194,34,53,0.25)' }}
                   >
                     <Icon size={22} color={item.color} />
                   </div>
@@ -175,7 +175,7 @@ export function BigNumbers() {
                       fontSize: 'clamp(2.5rem, 5vw, 4rem)',
                       fontWeight: 900,
                       lineHeight: 1,
-                      background: 'linear-gradient(135deg, #fff 40%, #ef4444 100%)',
+                      background: 'linear-gradient(135deg, #fff 40%, #C22235 100%)',
                       WebkitBackgroundClip: 'text',
                       WebkitTextFillColor: 'transparent',
                       backgroundClip: 'text',
@@ -191,21 +191,21 @@ export function BigNumbers() {
 
                   {/* Label */}
                   <div
-                    className="text-red-500 uppercase tracking-widest mb-2"
+                    className="text-[#C22235] tracking-widest mb-2"
                     style={{ fontSize: '0.65rem', fontWeight: 700 }}
                   >
                     {item.label}
                   </div>
 
                   {/* Sublabel */}
-                  <div className="text-gray-600" style={{ fontSize: '0.8rem', lineHeight: 1.5 }}>
+                  <div className="text-gray-600 text-balance" style={{ fontSize: '0.8rem', lineHeight: 1.5 }}>
                     {item.sublabel}
                   </div>
 
                   {/* Bottom glow */}
                   <div
                     className="absolute bottom-0 left-0 right-0 h-0.5 rounded-b-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                    style={{ background: 'linear-gradient(90deg, transparent, #ef4444, transparent)' }}
+                    style={{ background: 'linear-gradient(90deg, transparent, #C22235, transparent)' }}
                   />
                 </div>
               </AnimatedSection>

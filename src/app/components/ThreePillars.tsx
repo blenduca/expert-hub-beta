@@ -3,13 +3,13 @@ import { AnimatedSection } from './AnimatedSection';
 
 const pillars = [
   {
-    badge: 'PROGRAMAS DE ACELERAÇÃO',
-    badgeColor: '#dc2626',
-    badgeBg: 'rgba(220,38,38,0.12)',
-    badgeBorder: 'rgba(220,38,38,0.28)',
+    badge: 'Programas de aceleração',
+    badgeColor: '#C22235',
+    badgeBg: 'rgba(194,34,53,0.12)',
+    badgeBorder: 'rgba(194,34,53,0.28)',
     icon: Users,
-    iconColor: '#dc2626',
-    iconBg: 'rgba(220,38,38,0.12)',
+    iconColor: '#C22235',
+    iconBg: 'rgba(194,34,53,0.12)',
     name: "B'EXPERTS",
     tagline: 'Seu negócio de conhecimento, estruturado para escalar.',
     description:
@@ -19,25 +19,26 @@ const pillars = [
       { title: 'Comunidade Exclusiva', desc: 'Masterminds + Imersões presenciais' },
       { title: 'Acompanhamento Semanal', desc: 'Encontros táticos toda semana' },
     ],
-    featureDotColor: '#dc2626',
+    featureDotColor: '#C22235',
     idealFor: [
       'Mentores e consultores de 10k a 80k/mês que querem escalar',
       'Empresas de educação buscando recorrência',
     ],
-    ctaLabel: 'CONHECER OS PROGRAMAS',
-    ctaBg: 'linear-gradient(135deg, #991b1b 0%, #dc2626 100%)',
-    ctaShadow: '0 0 25px rgba(220,38,38,0.3)',
+    ctaLabel: 'Conhecer os programas',
+    ctaHref: '/b-experts.html',
+    ctaBg: 'linear-gradient(135deg, #a31c2d 0%, #C22235 100%)',
+    ctaShadow: '0 0 25px rgba(194,34,53,0.3)',
     smallText: 'Programas com investimento mensal · Níveis Starter a Scale',
-    borderGlow: 'linear-gradient(90deg, transparent, #dc2626, transparent)',
+    borderGlow: 'linear-gradient(90deg, transparent, #C22235, transparent)',
   },
   {
-    badge: 'INFRAESTRUTURA DIGITAL',
-    badgeColor: '#4479CC',
-    badgeBg: 'rgba(68,121,204,0.15)',
-    badgeBorder: 'rgba(68,121,204,0.35)',
+    badge: 'Infraestrutura digital',
+    badgeColor: '#00A3B4',
+    badgeBg: 'rgba(0,163,180,0.15)',
+    badgeBorder: 'rgba(0,163,180,0.35)',
     icon: LayoutGrid,
-    iconColor: '#4479CC',
-    iconBg: 'rgba(68,121,204,0.15)',
+    iconColor: '#00A3B4',
+    iconBg: 'rgba(0,163,180,0.15)',
     name: "B'TECH",
     tagline: 'A tecnologia que sustenta experts de alta performance.',
     description:
@@ -47,26 +48,27 @@ const pillars = [
       { title: 'Funnel Pages', desc: 'Funis completos: copy + design + código' },
       { title: 'Integrações & APIs', desc: 'CRM, automações e fluxos conectados' },
     ],
-    featureDotColor: '#4479CC',
+    featureDotColor: '#00A3B4',
     idealFor: [
       'Experts que precisam de infraestrutura profissional sem equipe tech',
       'Negócios que querem automatizar e escalar entregas',
     ],
-    ctaLabel: 'EXPLORAR SOLUÇÕES TECH',
-    ctaBg: 'linear-gradient(135deg, #1d4ed8 0%, #06b6d4 100%)',
-    ctaShadow: '0 0 25px rgba(6,182,212,0.4)',
+    ctaLabel: 'Explorar soluções tech',
+    ctaHref: '/b-tech.html',
+    ctaBg: 'linear-gradient(135deg, #008796 0%, #00A3B4 100%)',
+    ctaShadow: '0 0 25px rgba(0,163,180,0.4)',
     smallText: 'Soluções modulares com planos por nível de operação',
-    borderGlow: 'linear-gradient(90deg, transparent, #1d4ed8, #06b6d4, transparent)',
+    borderGlow: 'linear-gradient(90deg, transparent, #008796, #00A3B4, transparent)',
   },
   {
-    badge: 'INTELIGÊNCIA ARTIFICIAL',
-    badgeColor: '#8b5cf6',
-    badgeBg: 'rgba(139,92,246,0.12)',
-    badgeBorder: 'rgba(139,92,246,0.28)',
+    badge: 'Inteligência artificial',
+    badgeColor: '#6C3FC5',
+    badgeBg: 'rgba(108,63,197,0.12)',
+    badgeBorder: 'rgba(108,63,197,0.28)',
     icon: Bot,
-    iconColor: '#8b5cf6',
-    iconBg: 'rgba(139,92,246,0.12)',
-    name: "B'AGENTS",
+    iconColor: '#6C3FC5',
+    iconBg: 'rgba(108,63,197,0.12)',
+    name: "B'AGENT",
     tagline: 'Agentes de IA que trabalham por você 24/7.',
     description:
       'Agentes de IA personalizados que atendem, vendem e acompanham seus clientes sem parar. Do clone digital da sua expertise ao agente comercial completo.',
@@ -75,16 +77,17 @@ const pillars = [
       { title: 'Mentor A.I', desc: 'Mentoria ativa com IA conversacional' },
       { title: 'Comercial A.I', desc: 'Vendas + leads + agendamentos automatizados' },
     ],
-    featureDotColor: '#8b5cf6',
+    featureDotColor: '#6C3FC5',
     idealFor: [
       'Experts que querem multiplicar presença sem multiplicar tempo',
       'Negócios buscando atendimento e vendas automatizados',
     ],
-    ctaLabel: 'CONHECER OS AGENTES',
-    ctaBg: 'linear-gradient(135deg, #7c3aed 0%, #c026d3 100%)',
-    ctaShadow: '0 0 25px rgba(139,92,246,0.3)',
+    ctaLabel: 'Conhecer os agentes',
+    ctaHref: '/b-agent.html',
+    ctaBg: 'linear-gradient(135deg, #5a34a3 0%, #6C3FC5 100%)',
+    ctaShadow: '0 0 25px rgba(108,63,197,0.3)',
     smallText: 'Setup único + recorrência mensal · Produtos avulsos disponíveis',
-    borderGlow: 'linear-gradient(90deg, transparent, #a855f7, #c026d3, transparent)',
+    borderGlow: 'linear-gradient(90deg, transparent, #5a34a3, #6C3FC5, transparent)',
   },
 ];
 
@@ -96,7 +99,7 @@ export function ThreePillars() {
         className="absolute inset-0 pointer-events-none opacity-20"
         style={{
           backgroundImage:
-            'linear-gradient(rgba(220,38,38,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(220,38,38,0.06) 1px, transparent 1px)',
+            'linear-gradient(rgba(194,34,53,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(194,34,53,0.06) 1px, transparent 1px)',
           backgroundSize: '60px 60px',
         }}
       />
@@ -105,27 +108,27 @@ export function ThreePillars() {
         {/* Header */}
         <AnimatedSection className="text-center mb-20" direction="up">
           <div
-            className="inline-block mb-4 px-4 py-1.5 rounded-full uppercase tracking-widest"
+            className="inline-block mb-4 px-4 py-1.5 rounded-full tracking-widest"
             style={{
               fontSize: '0.65rem',
               fontWeight: 700,
-              color: '#ef4444',
-              background: 'rgba(220,38,38,0.1)',
-              border: '1px solid rgba(220,38,38,0.25)',
+              color: '#C22235',
+              background: 'rgba(194,34,53,0.1)',
+              border: '1px solid rgba(194,34,53,0.25)',
             }}
           >
-            Nosso Ecossistema de Soluções
+            Nosso ecossistema de soluções
           </div>
           <h2
             className="text-white mb-6"
             style={{ fontSize: 'clamp(1.8rem, 4vw, 3.2rem)', fontWeight: 800, lineHeight: 1.15 }}
           >
-            Três Pilares.
+            Três pilares.
             <br />
-            Uma <span style={{ color: '#ef4444' }}>Transformação</span> Completa.
+            Uma <span style={{ color: '#C22235' }}>transformação</span> completa.
           </h2>
           <p
-            className="text-gray-400 max-w-2xl mx-auto"
+            className="text-gray-400 max-w-2xl mx-auto text-balance"
             style={{ fontSize: '1rem', lineHeight: 1.8 }}
           >
             Cada unidade do Expert Hub foi desenhada para resolver uma dimensão crítica do seu
@@ -211,7 +214,7 @@ export function ThreePillars() {
 
                     {/* Description */}
                     <p
-                      className="text-gray-400 mb-6"
+                      className="text-gray-400 mb-6 text-balance"
                       style={{ fontSize: '0.85rem', lineHeight: 1.75 }}
                     >
                       {pillar.description}
@@ -252,7 +255,7 @@ export function ThreePillars() {
                       }}
                     >
                       <div
-                        className="text-gray-500 uppercase tracking-widest mb-3"
+                        className="text-gray-500 tracking-widest mb-3"
                         style={{ fontSize: '0.6rem', fontWeight: 700 }}
                       >
                         Para quem é ideal
@@ -280,12 +283,8 @@ export function ThreePillars() {
 
                   {/* CTA area */}
                   <div className="p-7 pt-0 mt-auto">
-                    <button
-                      onClick={() =>
-                        document
-                          .querySelector('#final-cta')
-                          ?.scrollIntoView({ behavior: 'smooth' })
-                      }
+                    <a
+                      href={pillar.ctaHref}
                       className="w-full py-3.5 rounded-xl text-white flex items-center justify-center gap-2 transition-all duration-200 hover:scale-105 cursor-pointer"
                       style={{
                         background: pillar.ctaBg,
@@ -294,11 +293,12 @@ export function ThreePillars() {
                         letterSpacing: '0.06em',
                         boxShadow: pillar.ctaShadow,
                         border: 'none',
+                        textDecoration: 'none',
                       }}
                     >
                       {pillar.ctaLabel}
                       <ArrowRight size={15} />
-                    </button>
+                    </a>
                     <p
                       className="text-center text-gray-600 mt-3"
                       style={{ fontSize: '0.68rem', lineHeight: 1.5 }}

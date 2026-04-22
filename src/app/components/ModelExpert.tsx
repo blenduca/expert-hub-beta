@@ -15,7 +15,7 @@ export function ModelExpert() {
         className="absolute inset-0 pointer-events-none opacity-20"
         style={{
           backgroundImage:
-            'linear-gradient(rgba(220,38,38,0.07) 1px, transparent 1px), linear-gradient(90deg, rgba(220,38,38,0.07) 1px, transparent 1px)',
+            'linear-gradient(rgba(194,34,53,0.07) 1px, transparent 1px), linear-gradient(90deg, rgba(194,34,53,0.07) 1px, transparent 1px)',
           backgroundSize: '60px 60px',
         }}
       />
@@ -26,24 +26,24 @@ export function ModelExpert() {
           <div className="flex-1 lg:max-w-xl">
             <AnimatedSection direction="left">
               <div
-                className="inline-block mb-3 px-3 py-1 rounded-full text-red-500 uppercase tracking-widest"
+                className="inline-block mb-3 px-3 py-1 rounded-full text-[#C22235] tracking-widest"
                 style={{
                   fontSize: '0.65rem',
                   fontWeight: 700,
-                  background: 'rgba(220,38,38,0.1)',
-                  border: '1px solid rgba(220,38,38,0.25)',
+                  background: 'rgba(194,34,53,0.1)',
+                  border: '1px solid rgba(194,34,53,0.25)',
                 }}
               >
                 Modelo Expert
               </div>
               <h2
-                className="text-white mb-6 uppercase"
+                className="text-white mb-6"
                 style={{ fontSize: 'clamp(1.8rem, 3.5vw, 3rem)', fontWeight: 800, lineHeight: 1.15 }}
               >
-                Tudo que Você Precisa{' '}
-                <span style={{ color: '#ef4444' }}>Em Uma Única Solução</span>
+                Tudo que você precisa{' '}
+                <span style={{ color: '#C22235' }}>em uma única solução</span>
               </h2>
-              <p className="text-gray-400 mb-8" style={{ fontSize: '1rem', lineHeight: 1.8 }}>
+              <p className="text-gray-400 mb-8 text-balance" style={{ fontSize: '1rem', lineHeight: 1.8 }}>
                 Nosso hub de soluções centraliza tudo o que o expert precisa para transformar seu negócio digital tradicional em um modelo de negócio escalável, recorrente e altamente lucrativo.
                 <br /><br />
                 Você terá acesso à um time completo acelerando seus resultados: um estrategista digital, um time de dezenas de assistentes de IA e de soluções completas de IA prontas para executar as atividades diárias da operação e crescimento do seu negócio, um analista do nosso time de sucesso de cliente acompanhando cada passo e um time de tecnologia desenvolvendo sua plataforma, seus funis de vendas e suas soluções de IA.
@@ -51,9 +51,9 @@ export function ModelExpert() {
 
               <button
                 onClick={() => document.querySelector('#final-cta')?.scrollIntoView({ behavior: 'smooth' })}
-                className="group relative inline-flex items-center gap-3 px-8 py-4 rounded-xl text-white overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(220,38,38,0.4)]"
+                className="group relative inline-flex items-center gap-3 px-8 py-4 rounded-xl text-white overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(194,34,53,0.4)]"
                 style={{
-                  background: 'linear-gradient(135deg, #b91c1c 0%, #dc2626 100%)',
+                  background: 'linear-gradient(135deg, #961a29 0%, #C22235 100%)',
                   border: '1px solid rgba(255,255,255,0.1)',
                   cursor: 'pointer',
                 }}
@@ -73,7 +73,7 @@ export function ModelExpert() {
                 <div
                   className="absolute inset-0 rounded-3xl pointer-events-none"
                   style={{
-                    background: 'radial-gradient(ellipse at 50% 60%, rgba(220,38,38,0.25) 0%, transparent 70%)',
+                    background: 'radial-gradient(ellipse at 50% 60%, rgba(194,34,53,0.25) 0%, transparent 70%)',
                     filter: 'blur(30px)',
                     transform: 'scale(1.3)',
                   }}
@@ -92,13 +92,13 @@ export function ModelExpert() {
                     className="absolute -bottom-10 -right-4 md:-right-8 max-w-[280px] p-5 rounded-2xl backdrop-blur-xl z-20"
                     style={{
                         background: 'rgba(20, 20, 20, 0.85)',
-                        border: '1px solid rgba(220, 38, 38, 0.3)',
+                        border: '1px solid rgba(194, 34, 53, 0.3)',
                         boxShadow: '0 20px 50px rgba(0,0,0,0.6)'
                     }}
                   >
                      <div className="flex items-start gap-3">
-                        <div className="text-3xl font-black text-red-500 leading-none">+40</div>
-                        <div className="text-white text-xs font-bold leading-tight uppercase pt-1">
+                        <div className="text-3xl font-black text-[#C22235] leading-none">+40</div>
+                        <div className="text-white text-xs font-bold leading-tight pt-1">
                             Soluções de IA
                         </div>
                      </div>

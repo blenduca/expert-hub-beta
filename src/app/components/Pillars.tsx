@@ -5,9 +5,9 @@ import { AnimatedSection } from './AnimatedSection';
 const pillars = [
   {
     id: 'educacao',
-    label: 'EDUCAÇÃO',
+    label: 'Educação',
     icon: BookOpen,
-    color: '#ef4444',
+    color: '#C22235',
     description:
       'Formação contínua com cursos, frameworks e workshops exclusivos para dominar as ferramentas da nova era do conhecimento.',
     detail: [
@@ -19,7 +19,7 @@ const pillars = [
   },
   {
     id: 'mentoria',
-    label: 'MENTORIA',
+    label: 'Mentoria',
     icon: Users,
     color: '#f87171',
     description:
@@ -33,9 +33,9 @@ const pillars = [
   },
   {
     id: 'consultoria',
-    label: 'CONSULTORIA',
+    label: 'Consultoria',
     icon: Lightbulb,
-    color: '#fca5a5',
+    color: '#e05969',
     description:
       'Visão estratégica profunda do seu negócio. Diagnóstico 360°, posicionamento premium e plano de ação personalizado.',
     detail: [
@@ -47,9 +47,9 @@ const pillars = [
   },
   {
     id: 'comunidade',
-    label: 'COMUNIDADE',
+    label: 'Comunidade',
     icon: Globe,
-    color: '#ef4444',
+    color: '#C22235',
     description:
       'Rede exclusiva de experts de alto nível com masterminds privados, parcerias estratégicas e eventos que transformam negócios.',
     detail: [
@@ -61,9 +61,9 @@ const pillars = [
   },
   {
     id: 'tecnologia',
-    label: 'TECNOLOGIA',
+    label: 'Tecnologia',
     icon: Cpu,
-    color: '#b91c1c',
+    color: '#961a29',
     description:
       'IA, automações e infraestrutura tecnológica para escalar sem aumentar equipe. Tecnologia como alavanca do seu crescimento.',
     detail: [
@@ -84,26 +84,26 @@ export function Pillars() {
        <div
           className="absolute inset-0 pointer-events-none"
           style={{
-            background: `radial-gradient(ellipse at 80% 20%, rgba(220,38,38,0.08) 0%, transparent 60%)`,
+            background: `radial-gradient(ellipse at 80% 20%, rgba(194,34,53,0.08) 0%, transparent 60%)`,
           }}
         />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         <AnimatedSection className="text-center mb-16" direction="up">
           <div
-            className="inline-block mb-3 px-3 py-1 rounded-full text-red-500 uppercase tracking-widest"
+            className="inline-block mb-3 px-3 py-1 rounded-full text-[#C22235] tracking-widest"
             style={{
               fontSize: '0.65rem',
               fontWeight: 700,
-              background: 'rgba(220,38,38,0.1)',
-              border: '1px solid rgba(220,38,38,0.25)',
+              background: 'rgba(194,34,53,0.1)',
+              border: '1px solid rgba(194,34,53,0.25)',
             }}
           >
-            Os 5 Pilares
+            Os 5 pilares
           </div>
           <h2 className="text-white" style={{ fontSize: 'clamp(1.6rem, 3vw, 2.5rem)', fontWeight: 800 }}>
-            A Base do{' '}
-            <span style={{ color: '#ef4444' }}>Ecossistema</span>
+            A base do{' '}
+            <span style={{ color: '#C22235' }}>ecossistema</span>
           </h2>
         </AnimatedSection>
 
@@ -119,13 +119,13 @@ export function Pillars() {
                   onClick={() => setActive(i)}
                   className="group relative w-full text-left p-4 rounded-xl transition-all duration-300"
                   style={{
-                    background: isActive ? 'linear-gradient(90deg, rgba(220,38,38,0.15), rgba(220,38,38,0.05))' : 'rgba(255,255,255,0.03)',
-                    border: isActive ? '1px solid rgba(220,38,38,0.3)' : '1px solid rgba(255,255,255,0.05)',
+                    background: isActive ? 'linear-gradient(90deg, rgba(194,34,53,0.15), rgba(194,34,53,0.05))' : 'rgba(255,255,255,0.03)',
+                    border: isActive ? '1px solid rgba(194,34,53,0.3)' : '1px solid rgba(255,255,255,0.05)',
                   }}
                 >
                   {/* Progress Bar Background Effect */}
                   <div 
-                    className="absolute inset-y-0 left-0 bg-red-600/10 transition-all duration-500 ease-out rounded-l-xl"
+                    className="absolute inset-y-0 left-0 bg-[#C22235]/10 transition-all duration-500 ease-out rounded-l-xl"
                     style={{ 
                       width: isActive ? '100%' : '0%',
                       opacity: isActive ? 1 : 0
@@ -137,7 +137,7 @@ export function Pillars() {
                       <div 
                         className="w-10 h-10 rounded-lg flex items-center justify-center transition-colors duration-300"
                         style={{ 
-                          background: isActive ? '#ef4444' : 'rgba(255,255,255,0.05)',
+                          background: isActive ? '#C22235' : 'rgba(255,255,255,0.05)',
                           color: isActive ? 'white' : '#6b7280'
                         }}
                       >
@@ -145,7 +145,7 @@ export function Pillars() {
                       </div>
                       <div>
                         <div className="text-xs text-gray-500 font-bold mb-0.5 tracking-wider">
-                          PILAR 0{i + 1}
+                          Pilar 0{i + 1}
                         </div>
                         <div 
                           className="font-bold transition-colors duration-300"
@@ -161,7 +161,7 @@ export function Pillars() {
                     
                     {/* Arrow/Chevron */}
                     <div 
-                      className={`text-gray-500 transition-transform duration-300 ${isActive ? 'rotate-90 text-red-500' : ''}`}
+                      className={`text-gray-500 transition-transform duration-300 ${isActive ? 'rotate-90 text-[#C22235]' : ''}`}
                     >
                       →
                     </div>
@@ -176,10 +176,10 @@ export function Pillars() {
             <div className="sticky top-24">
               <AnimatedSection key={active} direction="right" className="bg-neutral-900/50 p-8 sm:p-10 rounded-3xl border border-white/5">
                 <div className="flex items-center gap-4 mb-6">
-                  <div className="p-3 bg-red-500/10 rounded-xl border border-red-500/20">
+                  <div className="p-3 bg-[#C22235]/10 rounded-xl border border-[#C22235]/20">
                     {(() => {
                       const ActiveIcon = pillars[active].icon;
-                      return <ActiveIcon size={32} className="text-red-500" />;
+                      return <ActiveIcon size={32} className="text-[#C22235]" />;
                     })()}
                   </div>
                   <h3 className="text-3xl font-bold text-white">
@@ -187,12 +187,12 @@ export function Pillars() {
                   </h3>
                 </div>
                 
-                <p className="text-lg text-gray-400 leading-relaxed mb-8">
+                <p className="text-lg text-gray-400 leading-relaxed mb-8 text-balance">
                   {pillars[active].description}
                 </p>
 
                 <div className="space-y-4">
-                  <div className="text-xs font-bold text-gray-500 uppercase tracking-widest mb-4">
+                  <div className="text-xs font-bold text-gray-500 tracking-widest mb-4">
                     O que está incluso
                   </div>
                   <div className="grid sm:grid-cols-2 gap-4">
@@ -201,7 +201,7 @@ export function Pillars() {
                         key={idx}
                         className="flex items-center gap-3 p-3 rounded-lg bg-white/5 border border-white/5"
                       >
-                        <div className="w-1.5 h-1.5 rounded-full bg-red-500 shadow-[0_0_8px_rgba(239,68,68,0.6)]" />
+                        <div className="w-1.5 h-1.5 rounded-full bg-[#C22235] shadow-[0_0_8px_rgba(194,34,53,0.6)]" />
                         <span className="text-sm text-gray-300 font-medium">
                           {item}
                         </span>
@@ -213,7 +213,7 @@ export function Pillars() {
                 <div className="mt-10 pt-8 border-t border-white/10">
                   <button 
                     onClick={() => document.querySelector('#final-cta')?.scrollIntoView({ behavior: 'smooth' })}
-                    className="text-red-500 font-bold text-sm hover:text-red-400 transition-colors flex items-center gap-2"
+                    className="text-[#C22235] font-bold text-sm hover:text-[#e05969] transition-colors flex items-center gap-2"
                   >
                     SAIBA MAIS SOBRE {pillars[active].label} 
                     <span>→</span>

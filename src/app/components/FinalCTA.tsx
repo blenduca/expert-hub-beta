@@ -19,7 +19,7 @@ export function FinalCTA() {
         style={{
           width: '600px',
           height: '600px',
-          background: 'radial-gradient(circle, rgba(220,38,38,0.14) 0%, transparent 70%)',
+          background: 'radial-gradient(circle, rgba(194,34,53,0.14) 0%, transparent 70%)',
           top: '50%',
           left: '50%',
           transform: 'translate(-50%,-50%)',
@@ -29,18 +29,18 @@ export function FinalCTA() {
       {/* Top border */}
       <div
         className="absolute top-0 left-0 right-0 h-px"
-        style={{ background: 'linear-gradient(90deg, transparent, rgba(220,38,38,0.5), transparent)' }}
+        style={{ background: 'linear-gradient(90deg, transparent, rgba(194,34,53,0.5), transparent)' }}
       />
 
       <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center relative z-10">
         <AnimatedSection direction="up">
           <div
-            className="inline-block mb-4 px-3 py-1 rounded-full text-red-500 uppercase tracking-widest"
+            className="inline-block mb-4 px-3 py-1 rounded-full text-[#C22235] tracking-widest"
             style={{
               fontSize: '0.65rem',
               fontWeight: 700,
-              background: 'rgba(220,38,38,0.1)',
-              border: '1px solid rgba(220,38,38,0.25)',
+              background: 'rgba(194,34,53,0.1)',
+              border: '1px solid rgba(194,34,53,0.25)',
             }}
           >
             Próximo passo
@@ -58,18 +58,18 @@ export function FinalCTA() {
             Pronto para{' '}
             <span
               style={{
-                background: 'linear-gradient(135deg, #dc2626, #f87171)',
+                background: 'linear-gradient(135deg, #C22235, #f87171)',
                 WebkitBackgroundClip: 'text',
                 WebkitTextFillColor: 'transparent',
                 backgroundClip: 'text',
               }}
             >
-              Escalar
+              escalar
             </span>{' '}
-            Sua Expertise?
+            sua expertise?
           </h2>
 
-          <p className="text-gray-400 mb-10 max-w-xl mx-auto" style={{ fontSize: '1rem', lineHeight: 1.8 }}>
+          <p className="text-gray-400 mb-10 max-w-xl mx-auto text-balance" style={{ fontSize: '1rem', lineHeight: 1.8 }}>
             Receba um plano personalizado para transicionar para o novo modelo de mentoria e conhecer
             as soluções ideais para o seu negócio.
           </p>
@@ -88,7 +88,7 @@ export function FinalCTA() {
               textDecoration: 'none'
             }}
           >
-            <span>RECEBER MEU PLANO PERSONALIZADO</span>
+            <span>Receber meu plano personalizado</span>
             <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform duration-200" />
           </a>
 

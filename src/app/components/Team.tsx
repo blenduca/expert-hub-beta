@@ -37,7 +37,7 @@ export function Team() {
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
-          background: 'radial-gradient(ellipse at 50% 100%, rgba(220,38,38,0.05) 0%, transparent 60%)',
+          background: 'radial-gradient(ellipse at 50% 100%, rgba(194,34,53,0.05) 0%, transparent 60%)',
         }}
       />
 
@@ -45,21 +45,21 @@ export function Team() {
         {/* Header */}
         <AnimatedSection className="text-center mb-16" direction="up">
           <div
-            className="inline-block mb-3 px-3 py-1 rounded-full text-red-500 uppercase tracking-widest"
+            className="inline-block mb-3 px-3 py-1 rounded-full text-[#C22235] tracking-widest"
             style={{
               fontSize: '0.65rem',
               fontWeight: 700,
-              background: 'rgba(220,38,38,0.1)',
-              border: '1px solid rgba(220,38,38,0.25)',
+              background: 'rgba(194,34,53,0.1)',
+              border: '1px solid rgba(194,34,53,0.25)',
             }}
           >
-            Liderança & Visão
+            Liderança & visão
           </div>
           <h2 className="text-white mb-4" style={{ fontSize: 'clamp(1.6rem, 3.5vw, 2.8rem)', fontWeight: 800 }}>
             Quem está por trás do{' '}
-            <span style={{ color: '#ef4444' }}>Expert Hub</span>
+            <span style={{ color: '#C22235' }}>Expert Hub</span>
           </h2>
-          <p className="text-gray-500 max-w-xl mx-auto" style={{ fontSize: '0.95rem', lineHeight: 1.75 }}>
+          <p className="text-gray-500 max-w-xl mx-auto text-balance" style={{ fontSize: '0.95rem', lineHeight: 1.75 }}>
             Uma combinação de visão estratégica e inovação tecnológica para criar o ecossistema
             definitivo de negócios de conhecimento.
           </p>
@@ -73,7 +73,7 @@ export function Team() {
                 className="relative overflow-hidden rounded-2xl group h-full flex flex-col"
                 style={{
                   background: 'rgba(10,10,10,0.95)',
-                  border: '1px solid rgba(220,38,38,0.2)',
+                  border: '1px solid rgba(194,34,53,0.2)',
                 }}
               >
                 {/* Photo section */}
@@ -98,7 +98,7 @@ export function Team() {
                       <div className="text-white mb-0.5" style={{ fontSize: '1.1rem', fontWeight: 700 }}>
                         {member.name}
                       </div>
-                      <div className="text-red-400" style={{ fontSize: '0.75rem', fontWeight: 600 }}>
+                      <div className="text-[#e05969]" style={{ fontSize: '0.75rem', fontWeight: 600 }}>
                         {member.role}
                       </div>
                     </div>
@@ -107,7 +107,7 @@ export function Team() {
 
                 {/* Info section */}
                 <div className="p-6 flex flex-col flex-1">
-                  <p className="text-gray-500 mb-5" style={{ fontSize: '0.875rem', lineHeight: 1.75 }}>
+                  <p className="text-gray-500 mb-5 text-balance" style={{ fontSize: '0.875rem', lineHeight: 1.75 }}>
                     {member.bio}
                   </p>
 
@@ -116,13 +116,13 @@ export function Team() {
                     {member.tags.map((tag) => (
                       <span
                         key={tag}
-                        className="px-3 py-1 rounded-full text-red-400 uppercase"
+                        className="px-3 py-1 rounded-full text-[#e05969]"
                         style={{
                           fontSize: '0.6rem',
                           fontWeight: 700,
                           letterSpacing: '0.1em',
-                          background: 'rgba(220,38,38,0.08)',
-                          border: '1px solid rgba(220,38,38,0.2)',
+                          background: 'rgba(194,34,53,0.08)',
+                          border: '1px solid rgba(194,34,53,0.2)',
                         }}
                       >
                         {tag}

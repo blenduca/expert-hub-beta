@@ -15,7 +15,7 @@ const pillars = [
   {
     id: 1,
     number: "01",
-    name: "ESTRATÉGIA",
+    name: "Estratégia",
     icon: Target,
     position: "top-left",
     subtitle: "Consultoria & Orientação Individual",
@@ -26,7 +26,7 @@ const pillars = [
   {
     id: 2,
     number: "02",
-    name: "CONEXÕES",
+    name: "Conexões",
     icon: Network,
     position: "top-right",
     subtitle: "Comunidade & Networking Estratégico",
@@ -37,7 +37,7 @@ const pillars = [
   {
     id: 3,
     number: "03",
-    name: "PERFORMANCE",
+    name: "Performance",
     icon: TrendingUp,
     position: "top",
     subtitle: "Mentoria & Acompanhamento de Alto Nível",
@@ -48,7 +48,7 @@ const pillars = [
   {
     id: 4,
     number: "04",
-    name: "EDUCAÇÃO",
+    name: "Educação",
     icon: BookOpen,
     position: "bottom-left",
     subtitle: "Conteúdo & Formação Contínua",
@@ -59,7 +59,7 @@ const pillars = [
   {
     id: 5,
     number: "05",
-    name: "RESULTADOS",
+    name: "Resultados",
     icon: BarChart3,
     position: "bottom-right",
     subtitle: "Métricas, Rotina & Acompanhamento",
@@ -70,7 +70,7 @@ const pillars = [
   {
     id: 6,
     number: "06",
-    name: "TECNOLOGIA",
+    name: "Tecnologia",
     icon: Cpu,
     position: "bottom",
     subtitle: "Tech & Inteligência Artificial",
@@ -81,7 +81,7 @@ const pillars = [
   {
     id: 7,
     number: "CORE",
-    name: "IMPLEMENTAÇÃO",
+    name: "Implementação",
     icon: Zap,
     position: "center",
     subtitle: "O Motor do Ecossistema",
@@ -127,13 +127,13 @@ function Hexagon({
         style={{
           background: isActive
             ? pillar.isCenter
-              ? "linear-gradient(135deg, #dc2626, #991b1b)"
-              : "linear-gradient(135deg, #dc2626 0%, #7f1d1d 100%)"
+              ? "linear-gradient(135deg, #C22235, #741420)"
+              : "linear-gradient(135deg, #C22235 0%, #520e17 100%)"
             : pillar.isCenter
-            ? "linear-gradient(135deg, #7f1d1d 0%, #450a0a 100%)"
+            ? "linear-gradient(135deg, #520e17 0%, #450a0a 100%)"
             : "rgba(255,255,255,0.04)",
           boxShadow: isActive
-            ? "0 0 30px rgba(220,38,38,0.5), inset 0 0 20px rgba(220,38,38,0.1)"
+            ? "0 0 30px rgba(194,34,53,0.5), inset 0 0 20px rgba(194,34,53,0.1)"
             : "inset 0 0 0 1.5px rgba(255,255,255,0.07)",
           transition: "all 0.35s ease",
         }}
@@ -143,7 +143,7 @@ function Hexagon({
             fontSize: "9px",
             fontWeight: 800,
             letterSpacing: "0.12em",
-            color: isActive ? "#fca5a5" : "#dc2626",
+            color: isActive ? "#e05969" : "#C22235",
           }}
         >
           {pillar.isCenter ? "CORE" : pillar.number}
@@ -177,8 +177,8 @@ export function Ecosystem() {
     <section id="quem-somos" className="relative bg-[#080808] py-24 overflow-hidden">
       {/* BG */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-red-600/20 to-transparent" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-red-900 opacity-5 blur-[150px] rounded-full" />
+        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#C22235]/20 to-transparent" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-[#520e17] opacity-5 blur-[150px] rounded-full" />
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -191,19 +191,19 @@ export function Ecosystem() {
           className="text-center mb-16"
         >
           <div className="inline-flex items-center gap-2 mb-4">
-            <div className="h-px w-8 bg-red-600" />
-            <span className="text-red-500" style={{ fontSize: '12px', fontWeight: 700, letterSpacing: '0.15em' }}>
-              O ECOSSISTEMA
+            <div className="h-px w-8 bg-[#C22235]" />
+            <span className="text-[#C22235]" style={{ fontSize: '12px', fontWeight: 700, letterSpacing: '0.15em' }}>
+              O ecossistema
             </span>
-            <div className="h-px w-8 bg-red-600" />
+            <div className="h-px w-8 bg-[#C22235]" />
           </div>
           <h2
             className="text-white mb-4"
             style={{ fontSize: 'clamp(1.8rem, 4vw, 2.8rem)', fontWeight: 800, lineHeight: 1.2 }}
           >
-            O Modelo <span style={{ color: "#ef4444" }}>EXPERT</span>
+            O modelo <span style={{ color: "#C22235" }}>expert</span>
           </h2>
-          <p className="text-gray-400 max-w-2xl mx-auto" style={{ fontSize: '15px', lineHeight: 1.7 }}>
+          <p className="text-gray-400 max-w-2xl mx-auto text-balance" style={{ fontSize: '15px', lineHeight: 1.7 }}>
             7 pilares fundamentais em um ecossistema integrado. O core de{" "}
             <span className="text-white" style={{ fontWeight: 600 }}>
               Implementação
@@ -254,11 +254,11 @@ export function Ecosystem() {
                   <div
                     className="px-3 py-1 rounded-full border"
                     style={{
-                      background: "rgba(220,38,38,0.1)",
-                      borderColor: "rgba(220,38,38,0.3)",
+                      background: "rgba(194,34,53,0.1)",
+                      borderColor: "rgba(194,34,53,0.3)",
                     }}
                   >
-                    <span className="text-red-500" style={{ fontSize: '11px', fontWeight: 800, letterSpacing: '0.12em' }}>
+                    <span className="text-[#C22235]" style={{ fontSize: '11px', fontWeight: 800, letterSpacing: '0.12em' }}>
                       PILAR {activePillar.number}
                     </span>
                   </div>
@@ -270,10 +270,10 @@ export function Ecosystem() {
                 >
                   {activePillar.name}
                 </h3>
-                <p className="text-red-400 mb-4" style={{ fontSize: '14px', fontWeight: 600 }}>
+                <p className="text-[#e05969] mb-4" style={{ fontSize: '14px', fontWeight: 600 }}>
                   {activePillar.subtitle}
                 </p>
-                <p className="text-gray-400 mb-8" style={{ fontSize: '14px', lineHeight: 1.8 }}>
+                <p className="text-gray-400 mb-8 text-balance" style={{ fontSize: '14px', lineHeight: 1.8 }}>
                   {activePillar.description}
                 </p>
 
@@ -284,19 +284,19 @@ export function Ecosystem() {
                       initial={{ opacity: 0, x: 20 }}
                       animate={{ opacity: 1, x: 0 }}
                       transition={{ delay: i * 0.07 }}
-                      className="flex items-center gap-3 glass-card rounded-xl px-4 py-3 border border-red-900/20"
+                      className="flex items-center gap-3 glass-card rounded-xl px-4 py-3 border border-[#520e17]/20"
                     >
                       <div
-                        className="w-6 h-6 rounded-lg bg-red-600/15 border border-red-600/30 flex items-center justify-center shrink-0"
+                        className="w-6 h-6 rounded-lg bg-[#C22235]/15 border border-[#C22235]/30 flex items-center justify-center shrink-0"
                       >
-                        <span className="text-red-500" style={{ fontSize: '10px', fontWeight: 800 }}>
+                        <span className="text-[#C22235]" style={{ fontSize: '10px', fontWeight: 800 }}>
                           0{i + 1}
                         </span>
                       </div>
                       <span className="text-gray-300" style={{ fontSize: '13px', fontWeight: 600 }}>
                         {phase}
                       </span>
-                      <ChevronRight size={14} className="text-red-600/50 ml-auto" />
+                      <ChevronRight size={14} className="text-[#C22235]/50 ml-auto" />
                     </motion.div>
                   ))}
                 </div>
@@ -315,17 +315,17 @@ export function Ecosystem() {
                 onClick={() => setActivePillar(p)}
                 className={`w-full flex items-center gap-4 px-4 py-4 rounded-xl border text-left transition-all duration-300 ${
                   activePillar.id === p.id
-                    ? "border-red-600/50 bg-red-600/10"
+                    ? "border-[#C22235]/50 bg-[#C22235]/10"
                     : "border-white/5 bg-white/3"
                 }`}
               >
                 <div
                   className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0"
                   style={{
-                    background: activePillar.id === p.id ? "rgba(220,38,38,0.2)" : "rgba(255,255,255,0.04)",
+                    background: activePillar.id === p.id ? "rgba(194,34,53,0.2)" : "rgba(255,255,255,0.04)",
                   }}
                 >
-                  <Icon size={18} className={activePillar.id === p.id ? "text-red-500" : "text-gray-500"} />
+                  <Icon size={18} className={activePillar.id === p.id ? "text-[#C22235]" : "text-gray-500"} />
                 </div>
                 <div className="flex-1 min-w-0">
                   <div className="text-gray-500" style={{ fontSize: '10px', fontWeight: 700, letterSpacing: '0.1em' }}>
@@ -338,7 +338,7 @@ export function Ecosystem() {
                     {p.name}
                   </div>
                 </div>
-                <ChevronRight size={14} className={activePillar.id === p.id ? "text-red-500" : "text-gray-600"} />
+                <ChevronRight size={14} className={activePillar.id === p.id ? "text-[#C22235]" : "text-gray-600"} />
               </motion.button>
             );
           })}

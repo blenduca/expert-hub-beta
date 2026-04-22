@@ -4,7 +4,7 @@ import { AnimatedSection } from './AnimatedSection';
 const stages = [
   {
     stage: 'ETAPA 01',
-    title: 'MODELO DE NEGÓCIO IDEAL',
+    title: 'Modelo de negócio ideal',
     icon: Target,
     description:
       'Em apenas 1 mês, desenvolvemos todos os pilares do seu negócio de conhecimento, o melhor modelo de negócio do mundo, que permite que você viva da sua paixão, transforme vidas através do seu conhecimento, tenha a liberdade para trabalhar de onde, como e quanto você quiser e ainda atinja margens de lucro de até 90%. Você recebe o seu Mapa B’Expert.',
@@ -20,7 +20,7 @@ const stages = [
   },
   {
     stage: 'ETAPA 02',
-    title: 'Motor de Crescimento',
+    title: 'Motor de crescimento',
     icon: Zap,
     description:
       'Após faturar com sua rede de relacionamentos atual, vamos desenvolver um verdadeiro sistema de marketing e vendas para você crescer com consistência.',
@@ -39,7 +39,7 @@ const stages = [
   },
   {
     stage: 'ETAPA 03',
-    title: 'PRODUTOS E ENTREGAS ESCALÁVEIS',
+    title: 'Produtos e entregas escaláveis',
     icon: Settings,
     description:
       'Agora, chegou a hora de transformar sua entrega 1:1 em um modelo recorrente e escalável. Para isso, vamos sistematizar sua método e diversificar sua entrega nos 5 pilares do novo modelo de mentor[IA] da nova era do mercado digital.',
@@ -59,7 +59,7 @@ const stages = [
   },
   {
     stage: 'ETAPA 04',
-    title: 'Gestão de Resultados (OKRS & KPIS)',
+    title: 'Gestão de resultados (OKRs & KPIs)',
     icon: Brain,
     description:
       'Primeiro, você chega em R$ 10k a R$ 20k/mês com mentorias de alto valor. Depois, você acelera de R$ 20k pra R$ 40k/mês com programas recorrentes e escaláveis. E então cria um crescimento consistente de 4 a 6 novos clientes ideais por mês, adicionando R$ 4k a R$ 12k de receita recorrente mensal. Até bater R$ 80k a R$ 100k/mês e. Nessa fase, vamos te acompanhar seus projetos estratégicos (OKRs) semanalmente e seus resultados e indicadores chaves (KPIs) semanalmente, para você construir seu Negócio de Conhecimento Milionário em 1 a 3 anos.',
@@ -82,21 +82,21 @@ export function Method() {
         {/* Header */}
         <AnimatedSection className="text-center mb-12" direction="up">
           <div
-            className="inline-block mb-3 px-3 py-1 rounded-full text-red-500 uppercase tracking-widest"
+            className="inline-block mb-3 px-3 py-1 rounded-full text-[#C22235] tracking-widest"
             style={{
               fontSize: '0.65rem',
               fontWeight: 700,
-              background: 'rgba(220,38,38,0.1)',
-              border: '1px solid rgba(220,38,38,0.25)',
+              background: 'rgba(194,34,53,0.1)',
+              border: '1px solid rgba(194,34,53,0.25)',
             }}
           >
             Método B'Expert
           </div>
           <h2 className="text-white mb-4" style={{ fontSize: 'clamp(1.6rem, 3.5vw, 2.8rem)', fontWeight: 800 }}>
-            A jornada para Transformar{' '}
-            <span style={{ color: '#ef4444' }}>seu Negócio de Conhecimento</span>
+            A jornada para transformar{' '}
+            <span style={{ color: '#C22235' }}>seu negócio de conhecimento</span>
           </h2>
-          <p className="text-gray-500 max-w-xl mx-auto" style={{ fontSize: '1rem', lineHeight: 1.75 }}>
+          <p className="text-gray-500 max-w-xl mx-auto text-balance" style={{ fontSize: '1rem', lineHeight: 1.75 }}>
             O método sistematizado para transformar seu conhecimento em um negócio de mentoria ou de consultoria recorrente, previsível e escalável.
           </p>
         </AnimatedSection>
@@ -126,7 +126,7 @@ export function Method() {
           {/* Center vertical line */}
           <div
             className="absolute left-1/2 top-0 bottom-0 w-px -translate-x-1/2 hidden md:block"
-            style={{ background: 'linear-gradient(180deg, transparent, rgba(220,38,38,0.5) 20%, rgba(220,38,38,0.5) 80%, transparent)' }}
+            style={{ background: 'linear-gradient(180deg, transparent, rgba(194,34,53,0.5) 20%, rgba(194,34,53,0.5) 80%, transparent)' }}
           />
 
           <div className="flex flex-col gap-12 md:gap-16">
@@ -147,23 +147,23 @@ export function Method() {
                         className="p-6 sm:p-8 rounded-2xl group hover:scale-[1.02] transition-transform duration-300"
                         style={{
                           background: 'rgba(12,12,12,0.95)',
-                          border: '1px solid rgba(220,38,38,0.2)',
-                          boxShadow: '0 0 40px rgba(220,38,38,0.04)',
+                          border: '1px solid rgba(194,34,53,0.2)',
+                          boxShadow: '0 0 40px rgba(194,34,53,0.04)',
                         }}
                       >
                         {/* Month badge */}
                         <div
                           className="inline-flex items-center gap-2 mb-4 px-3 py-1 rounded-lg"
                           style={{
-                            background: 'rgba(220,38,38,0.12)',
-                            border: '1px solid rgba(220,38,38,0.25)',
+                            background: 'rgba(194,34,53,0.12)',
+                            border: '1px solid rgba(194,34,53,0.25)',
                           }}
                         >
                           <div
-                            className="w-1.5 h-1.5 rounded-full bg-red-500"
-                            style={{ boxShadow: '0 0 6px rgba(220,38,38,0.8)' }}
+                            className="w-1.5 h-1.5 rounded-full bg-[#C22235]"
+                            style={{ boxShadow: '0 0 6px rgba(194,34,53,0.8)' }}
                           />
-                          <span className="text-red-400 uppercase tracking-widest" style={{ fontSize: '0.65rem', fontWeight: 700 }}>
+                          <span className="text-[#e05969] tracking-widest" style={{ fontSize: '0.65rem', fontWeight: 700 }}>
                             {item.stage}
                           </span>
                         </div>
@@ -172,16 +172,16 @@ export function Method() {
                         <div className="flex items-center gap-3 mb-4">
                           <div
                             className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0"
-                            style={{ background: 'rgba(220,38,38,0.1)', border: '1px solid rgba(220,38,38,0.2)' }}
+                            style={{ background: 'rgba(194,34,53,0.1)', border: '1px solid rgba(194,34,53,0.2)' }}
                           >
-                            <Icon size={20} color="#ef4444" />
+                            <Icon size={20} color="#C22235" />
                           </div>
-                          <h3 className="text-white uppercase" style={{ fontSize: '1rem', fontWeight: 800 }}>
+                          <h3 className="text-white" style={{ fontSize: '1rem', fontWeight: 800 }}>
                             {item.title}
                           </h3>
                         </div>
 
-                        <p className="text-gray-400 mb-6" style={{ fontSize: '0.9rem', lineHeight: 1.6 }}>
+                        <p className="text-gray-400 mb-6 text-balance" style={{ fontSize: '0.9rem', lineHeight: 1.6 }}>
                           {item.description}
                         </p>
 
@@ -190,7 +190,7 @@ export function Method() {
                           {item.tags.map((tag) => (
                             <span
                               key={tag}
-                              className="px-3 py-1 rounded-full text-gray-400 uppercase"
+                              className="px-3 py-1 rounded-full text-gray-400"
                               style={{
                                 fontSize: '0.6rem',
                                 fontWeight: 700,
@@ -210,8 +210,8 @@ export function Method() {
                       <div
                         className="w-10 h-10 rounded-full flex items-center justify-center z-10"
                         style={{
-                          background: 'linear-gradient(135deg, #dc2626, #ef4444)',
-                          boxShadow: '0 0 20px rgba(220,38,38,0.6)',
+                          background: 'linear-gradient(135deg, #C22235, #C22235)',
+                          boxShadow: '0 0 20px rgba(194,34,53,0.6)',
                           border: '3px solid #000',
                         }}
                       >

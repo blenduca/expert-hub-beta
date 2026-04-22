@@ -52,9 +52,9 @@ export function YouTubePlayer({
           />
           <div className="absolute inset-0 bg-black/40" />
           <button
-            className="relative z-10 w-20 h-20 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-[0_0_40px_rgba(220,38,38,0.6)]"
+            className="relative z-10 w-20 h-20 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-[0_0_40px_rgba(194,34,53,0.6)]"
             style={{
-              background: 'linear-gradient(135deg, #b91c1c 0%, #dc2626 100%)',
+              background: 'linear-gradient(135deg, #961a29 0%, #C22235 100%)',
               border: '2px solid rgba(255,255,255,0.2)',
             }}
             aria-label="Play video"
